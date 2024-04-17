@@ -8,10 +8,12 @@
 <body>
     <div>
         <button>
-            <span>
+            <span class="icon">
                 <img src="./icon.svg" alt="icon from Punch.Cool interview" title="icon from Punch.Cool interview">
             </span>
-            Explore
+            <span class="text">
+                Explore
+            </span>
         </button>
     </div>
 </body>
@@ -36,19 +38,22 @@
         background-color: white;
         cursor: pointer;
         transition: all 400ms ease-in-out;
-        && span{
-            transition: all 1000ms ease-in-out;
+        && .icon{
+            transition: all 800ms ease-in-out;
             line-height: 0;
         }
         &&:hover{
             color: white;
             background-color: black;
-            && span{
+            && .icon{
                 order: 1;
-                /* transform: translateX(100%); */
+                transform: translateX(15%);
             }
         }
     }
+    /* button:hover .icon{
+        transform: translateX(100%);
+    } */
     /* span{
         position: absolute;
         left: 0;
