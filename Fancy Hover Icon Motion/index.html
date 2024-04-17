@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Hover Icon Motion</title>
+</head>
+<body>
+    <div>
+        <button>
+            <span>
+                <img src="./icon.svg" alt="icon from Punch.Cool interview" title="icon from Punch.Cool interview">
+            </span>
+            Explore
+        </button>
+    </div>
+</body>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        height: 90vh;
+    }
+    button{
+        position: relative;
+        font-size: 22px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        cursor: pointer;
+        transition: all 400ms ease-in-out;
+        && span{
+            transition: all 1000ms ease-in-out;
+            line-height: 0;
+        }
+        &&:hover{
+            color: white;
+            background-color: black;
+            && span{
+                order: 1;
+                /* transform: translateX(100%); */
+            }
+        }
+    }
+    /* span{
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: auto;
+    } */
+</style>
+</html>
